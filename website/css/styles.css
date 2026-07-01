@@ -28,15 +28,31 @@ h2 {
     color: white;
 }
 
-#logotest {
-    font-family: "Tanker", sans-serif;
-    color: white;
-    font-size: 48px;
+.hero {
+    min-height: 90vh;
+    background: white;
 }
 
-body {
-    font-family: "CrimsonText", serif;
-    background-color: #000BC9;
-    color: #BEC1EB;
-    max-width: 800px;
+.featured {
+    padding: 6rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: skyblue;
+}
+
+.featured img {
+    width: 70%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.blog-preview {
+    padding: 8rem 0;
+    background: blue;
+}
+
+.footer {
+    padding: 2rem;
+    background: skyblue;
 }
