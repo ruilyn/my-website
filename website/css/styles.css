@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "CrimsonText";
+    src: url("../fonts/CrimsonText-Regular.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter_24pt-SemiBold.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "Datatype";
+    src: url("../fonts/Datatype-VariableFont_wdth,wght.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "Tanker";
+    src: url("../fonts/Tanker-Regular.ttf") format("truetype")
+}
+
+h1 {
+    font-family: "Inter", sans-serif;
+    color: white;
+}
+
+h2 {
+    font-family: "Datatype", sans-serif;
+    color: white;
+}
+
+#logotest {
+    font-family: "Tanker", sans-serif;
+    color: white;
+    font-size: 48px;
+}
+
+body {
+    font-family: "CrimsonText", serif;
+    background-color: #000BC9;
+    color: #BEC1EB;
+    max-width: 800px;
+}
