@@ -1,3 +1,8 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 @font-face {
     font-family: "CrimsonText";
     src: url("../fonts/CrimsonText-Regular.ttf") format("truetype")
@@ -20,7 +25,6 @@
 
 h1 {
     font-family: "Tanker", sans-serif;
-    color: white;
 }
 
 h2 {
@@ -30,14 +34,15 @@ h2 {
 
 .hero {
     min-height: 90vh;
-    background: white;
+    background: rgb(218, 222, 234);
 }
 
 .featured {
     padding: 6rem 0;
     display: flex;
     justify-content: center;
-    background: blue;
+    background: rgb(0, 8, 162);
+    color: white
 }
 
 .image-wrapper {
@@ -76,8 +81,9 @@ h2 {
 
 .blog-preview {
     padding: 4rem 0 18rem;
-    background: rgb(0, 0, 227);
+    background: rgb(1, 4, 135);
     text-align:center;
+    color: white
 }
 
 .blog-title {
@@ -121,7 +127,7 @@ h2 {
 
 .footer {
     padding: 2rem;
-    background: blue;
+    background: rgb(0, 8, 162);
     font: "CrimsonText", serif;
     font-size: 1rem;
     color: rgb(198, 186, 230);
