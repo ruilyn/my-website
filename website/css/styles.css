@@ -5,6 +5,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 @font-face {
@@ -67,6 +68,7 @@ nav {
     z-index: 1;
     isolation: isolate;
     overflow: hidden;
+    padding-bottom: 26rem
 }
 
 .hero::before {
@@ -125,7 +127,7 @@ main {
 
 .content {
     z-index: 2;
-    overflow: hidden;
+    overflow: visible;
     position: relative;
 }
 
@@ -135,7 +137,7 @@ main {
         to bottom,
         rgb(0, 8, 162),
         #000572,
-        rgb(0, 5, 105) 40%);
+        rgb(0, 5, 91) 40%);
 }
 
 .content::before {
@@ -160,7 +162,7 @@ main {
 }
 
 .featured {
-    padding: 15rem 0;
+    padding: 15rem 0 0rem;
     display: flex;
     justify-content: center;
     color: white;
@@ -169,6 +171,8 @@ main {
 }
 
 .featured-stack {
+    top: -30rem;
+    margin-bottom: -15rem;
     position: relative;
     width: 70%;
     display: flex;
@@ -212,10 +216,35 @@ main {
     z-index: 2;
 }
 
+.featured-button {
+    position: absolute;
+    left: -40px;
+    bottom: -120px;
+    z-index: 3;
+    padding: 0.85rem 4rem;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 999px;
+    background: rgb(198, 186, 230);
+    color: rgb(0, 8, 162);
+    text-decoration: none;
+    font-family: "DMMono", sans-serif;
+    font-size: 1.5rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+}
+
+.preview-button {
+    margin-top: 4rem;
+    text-align: center;
+    padding: 1rem 9rem;
+}
+
 .scroll-text-band {
     --scroll-progress: 0;
     position: absolute;
-    top: 50%;
+    top: 39%;
     left: 50%;
     width: 160%;
     transform: translate(-50%, -50%);
@@ -230,7 +259,7 @@ main {
     margin: 0;
     white-space: nowrap;
     font-family: "Datatype", sans-serif;
-    font-size: 4rem ;
+    font-size: 7rem ;
     line-height: 0.8;
     color: rgba(255, 255, 255, 0.9);
     transform: translateX(calc(var(--offset) + (var(--scroll-progress) * 160px * var(--dir))));
@@ -239,7 +268,7 @@ main {
 
 .blog-preview {
     position: relative;
-    padding: 4rem 0 33rem;
+    padding-bottom: 33rem;
     text-align:center;
     color: white;
     z-index: 2;
@@ -256,6 +285,8 @@ main {
     gap: 2rem;
     width: 85%;
     margin: 0 auto;
+    position: relative;
+    z-index: 2;
 }
 
 .blog-card {
