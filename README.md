@@ -1,6 +1,8 @@
 personal website which can hopefully be used for hosting portfolio and blog in the future
 
-tried to keep js use minimal for this
+check out the spaghetti code Here: https://ruilyn.github.io/my-website/index.html
+
+tried to keep js use minimal for this<br>
 went insane trying to stack a bunch of texture layers everywhere without having everything explode and fighting each other
 
 attributions
