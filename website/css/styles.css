@@ -51,19 +51,93 @@ body {
     font-family: "DMMono", monospace;
 }
 
-nav {
-  position: fixed;
-  top: 0;
-  right: 0;
+.menu-button {
+    position: fixed;
+    top: 14px;
+    right: 20px;
+    z-index: 10;
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    border: none;
+    border-radius: 12px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    z-index: 11;
+}
+
+.menu-button { position: fixed; }
+.menu-button span {
+    position: absolute;
+    width: 24px;
+    height: 3px;
+    background: #ffffff;
+    border-radius: 999px;
+    transition: transform 0.25s ease, opacity 0.2s ease;
+    transform-origin: center;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.mobile-menu {
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-12px);
+    transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s;
+    background: rgba(8, 10, 24, 0.72);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    }
+
+.mobile-menu.show {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.mobile-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: clamp(1.4rem, 3vw, 2.4rem);
+    font-family: "DMMono-M", monospace;
+    letter-spacing: 0.04em;
+    z-index: 10;
+}
+
+.menu-button span:nth-child(1) { transform: translateY(-7px); }
+.menu-button span:nth-child(2) { transform: translateY(0); }
+.menu-button span:nth-child(3) { transform: translateY(7px); }
+
+.menu-button.open span:nth-child(1) { transform: rotate(45deg); }
+.menu-button.open span:nth-child(2) { opacity: 0; }
+.menu-button.open span:nth-child(3) { transform: rotate(-45deg); }
+
+.glass{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
 }
 
 .logo {
-  display: block;
-  width: 40rem;
-  height: auto;
-  margin: 0 auto;
-  position: relative;
-  z-index: 2;
+    display: block;
+    width: 40rem;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    z-index: 5;
 }
 
 .hero {
@@ -117,7 +191,7 @@ nav {
     margin-top: 4rem;
     position: relative;
     text-align: right;
-    width: 50%;
+    width: 47%;
     margin-left: auto;
     z-index: 5;
 }
@@ -149,6 +223,8 @@ main {
 
 .content-inner {
     background:
+        url("../images/deco2.webp") right 0 top 15% / 700px no-repeat,
+        url("../images/deco1.webp") left -20px bottom -20px / 500px no-repeat,
         linear-gradient(
         to bottom,
         rgb(0, 8, 162),
@@ -338,13 +414,6 @@ main {
     font-size: 1rem;
     color: rgb(198, 186, 230);
     text-align: center;
-}
-
-.logo-star {
-  display: block;
-  width: 15rem;
-  height: auto;
-  margin: 0 auto;
 }
 
 .footer a {

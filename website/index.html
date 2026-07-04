@@ -7,14 +7,20 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<script src="js/script.js"></script>
-
 <body>
 
     <header>
-        <nav>
-            <button class="menu-button">☰</button>
+        <nav id="mobileMenu" class="mobile-menu">
+            <a href="index.html">Home</a>
+            <a href="pages/portfolio.html">Portfolio</a>
+            <a href="pages/garage.html">Garage</a>
+            <a href="pages/about.html">About Me</a>
         </nav>
+            <button class="menu-button glass" id="menuBtn" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
     </header>
 
 <main>
@@ -24,31 +30,27 @@
         <img class="hero-art" src="images/hero-art.png">
         <div class="hero-text">
         <h2>HELLO!</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            Quam earum illo eos animi inventore ut magnam, sit molestiae 
-            fuga, natus ex minima dolore consequuntur sint nam illum 
-            voluptatibus ipsum vel. Lorem ipsum dolor sit amet 
-            consectetur adipisicing elit. Obcaecati id, aliquid, 
-            mollitia, earum beatae tempora magni libero incidunt 
-            molestias laborum officiis perferendis quod consequatur 
-            velit odit in doloremque voluptas! Quibusdam. 
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Non doloremque voluptate, laborum deserunt autem ut 
-            aliquid hic quasi ullam vero fugiat error porro quis ex 
-            cumque architecto. Ad, totam maiores.</p>
+        <p>This is my project for Stardance which I plan to use 
+            for hosting my academic work and hobbyist blog in future.
+            I've been meaning to make my own website for the longest
+            time but never got around to it, so I'm very grateful that this program has given
+            me an opportunity to do exactly that. I spent a lot
+            of unlogged hours working on the visuals so please take your time browsing this short page, thanks.
+            </p>
         </div>
-        <!--art-->
     </section>
     
     <section class="content">
 
         <div class="content-inner">
+    
             <section class="featured">
                 <div class="featured-stack">
                 <div class="image-wrapper">
                     <img src="https://assets.wwf.org.au/image/upload/v1674690824/website-media/news-blogs/platypus_naturepicturelibrary.jpg" alt="cute lil platy">
                     <h1>featured</h1>
-                    <a href="#" class="featured-button button">PORTFOLIO</a>
+                    <a href="pages/portfolio.html" class="featured-button button">PORTFOLIO</a>
+                </div>
                 </div>
             </section>
 
@@ -57,7 +59,7 @@
 
                     <section class="scroll-text-band" aria-hidden="true">
                         <p class="scroll-row" style="--dir: -1; --offset: 0px;">
-                            WHAT'S NEW WHAT'S NEW WHAT'S NEW WHAT'S NEW WHAT'S NEW
+                            NEW WHAT'S NEW WHAT'S NEW WHAT'S NEW WHAT'S NEW
                             WHAT'S NEW WHAT'S NEW WHAT'S NEW WHAT'S NEW WHAT'S NEW
                             WHAT'S NEW WHAT'S NEW WHAT'S NEW WHAT'S NEW WHAT'S NEW
                         </p>
@@ -67,7 +69,7 @@
                             WHAT'S NEW WHAT'S NEW WHAT'S NEW WHAT'S NEW WHAT'S NEW
                         </p>
                         <p class="scroll-row" style="--dir: -1; --offset: -10px;">
-                            WHAT'S NEW WHAT'S NEW WHAT'S NEW WHAT'S NEW WHAT'S NEW
+                            NEW WHAT'S NEW WHAT'S NEW WHAT'S NEW WHAT'S NEW
                             WHAT'S NEW WHAT'S NEW WHAT'S NEW WHAT'S NEW WHAT'S NEW
                             WHAT'S NEW WHAT'S NEW WHAT'S NEW WHAT'S NEW WHAT'S NEW
                         </p>
@@ -86,7 +88,7 @@
                         <img src="https://listproducer.com/wp-content/uploads/2014/10/cute.jpg">
                     </div>
                 </div>
-                <a href="#" class="preview-button button">GARAGE</a>
+                <a href="pages/garage.html" class="preview-button button">GARAGE</a>
 
             </section>
         </div>
@@ -102,5 +104,6 @@
     </footer>
 
 </body>
+<script src="js/script.js"></script>
 
 </html>
