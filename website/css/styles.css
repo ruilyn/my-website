@@ -33,6 +33,11 @@ html, body {
     src: url("../fonts/DMMono-Regular.ttf") format("truetype")
 }
 
+@font-face {
+    font-family: "DMMono-M";
+    src: url("../fonts/DMMono-Medium.ttf") format("truetype")
+}
+
 h1 {
     font-family: "Tanker", sans-serif;
 }
@@ -68,7 +73,17 @@ nav {
     z-index: 1;
     isolation: isolate;
     overflow: hidden;
-    padding-bottom: 26rem
+    padding-bottom: 20rem
+}
+
+.hero-art {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: clamp(36rem, 58vw, 62rem);
+    max-width: 55%;
+    height: auto;
+    z-index: 2;
 }
 
 .hero::before {
@@ -98,25 +113,26 @@ nav {
 }
 
 .hero-text {
-    margin-top: 5rem;
+    padding-right: 4rem;
+    margin-top: 4rem;
     position: relative;
-    text-align: left;
-    width: 40%;
-    margin-left: 4rem;
+    text-align: right;
+    width: 50%;
+    margin-left: auto;
     z-index: 5;
 }
 
 .hero-text h2 {
-    font-size: 5rem;
-    font-family: "Inter", sans-serif;
-    color: rgb(0, 7, 148);
+    font-size: 6rem;
+    font-family: "DMMono-M", monospace;
+    color: #0008A2;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
 
 .hero-text p {
     font-size: 1.5rem;
-    color: rgb(39, 45, 155);
+    color: #0008A2;
     margin-top: 0;
 }
 
@@ -227,7 +243,7 @@ main {
 .button {
     display: inline-block;
     border-radius: 999px;
-    background: rgb(198, 186, 230);
+    background: rgb(255, 255, 255);
     color: rgb(0, 8, 162);
     text-decoration: none;
     font-family: "DMMono", sans-serif;
